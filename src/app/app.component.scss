@@ -1,0 +1,11 @@
+@import "../styles/variables";
+
+.content {
+  padding-top: 80px;
+  height: calc(100% - 80px);
+
+  @media (max-width: $sm-max) {
+    padding-top: 54px;
+    height: calc(100% - 54px);
+  }
+}

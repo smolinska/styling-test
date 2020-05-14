@@ -1,0 +1,50 @@
+@import "variables";
+
+.button-default-large,
+.button-hollow-large {
+  font-size: 24px;
+  padding: 20px 53px;
+
+  @media (max-width: $lg-max) {
+    font-size: 18px;
+  }
+}
+
+.button-default-medium,
+.button-hollow-medium {
+  font-size: 18px;
+  padding: 15px 60px;
+
+  @media (max-width: $lg-max) {
+    font-size: 16px;
+  }
+}
+
+.button-default-large,
+.button-default-medium {
+  color: $white;
+  background: $action2;
+  line-height: 24px;
+  font-weight: bold;
+  border: 1px solid $action2;
+
+  &:hover {
+    color: $action2;
+    background: $white;
+    border-color: $white;
+  }
+}
+
+.button-hollow-large,
+.button-hollow-medium {
+  color: $white;
+  background: transparent;
+  line-height: 24px;
+  font-weight: bold;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $action2;
+    border-color: $action2;
+  }
+}

@@ -1,10 +1,13 @@
 @import "variables";
 
-body {
-  //background: $background;
+body,
+html {
   font-family: 'Playfair Display', sans-serif;
   color: $white;
-  height: 200vh;
+  background: $background;
+  height: 100%;
+  margin: 0;
+  letter-spacing: 0;
 }
 
 button {
@@ -21,7 +24,6 @@ button {
 .title-small,
 .title-xsmall {
   font-weight: bold;
-  letter-spacing: 0;
   text-align: left;
 
   &.accent {
@@ -30,26 +32,106 @@ button {
 }
 
 .title-xlarge {
-  font-size: 44px;
-  line-height: 54px;
+  font-size: 54px;
+  line-height: 70px;
+
+  @media (max-width: $lg-max) {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 32px;
+    line-height: 42px;
+  }
 }
 
 .title-large {
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 44px;
+  line-height: 54px;
+
+  @media (max-width: $lg-max) {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .title-medium {
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 42px;
+
+  @media (max-width: $lg-max) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .title-small {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 32px;
+
+  @media (max-width: $lg-max) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .title-xsmall {
+  font-size: 18px;
+  line-height: 28px;
+
+  @media (max-width: $lg-max) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.text-large {
+  font-size: 20px;
+  line-height: 32px;
+
+  @media (max-width: $lg-max) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.text-medium {
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $lg-max) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
