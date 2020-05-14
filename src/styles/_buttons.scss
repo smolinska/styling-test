@@ -6,7 +6,13 @@
   padding: 20px 53px;
 
   @media (max-width: $lg-max) {
+    font-size: 22px;
+    padding: 16px 55px;
+  }
+
+  @media (max-width: $sm-max) {
     font-size: 18px;
+    padding: 15px 32px;
   }
 }
 
@@ -16,20 +22,25 @@
   padding: 15px 60px;
 
   @media (max-width: $lg-max) {
+    padding: 11px 55px;
+  }
+
+  @media (max-width: $sm-max) {
     font-size: 16px;
+    padding: 10px 32px;
   }
 }
 
 .button-default-large,
 .button-default-medium {
   color: $white;
-  background: $action2;
+  background: $primary;
   line-height: 24px;
   font-weight: bold;
-  border: 1px solid $action2;
+  border: 1px solid $primary;
 
   &:hover {
-    color: $action2;
+    color: $primary;
     background: $white;
     border-color: $white;
   }
@@ -44,7 +55,7 @@
   border: 1px solid $white;
 
   &:hover {
-    color: $action2;
-    border-color: $action2;
+    color: $primary;
+    border-color: $primary;
   }
 }

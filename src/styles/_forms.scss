@@ -1,0 +1,31 @@
+@import "variables";
+
+input, textarea {
+  font-family: 'Playfair Display', sans-serif;
+  margin-bottom: 30px;
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+  color: $white;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+
+  @media (max-width: $lg-max) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $sm-max) {
+    font-size: 14px;
+  }
+}
+
+::placeholder {
+  color: $white;
+}
