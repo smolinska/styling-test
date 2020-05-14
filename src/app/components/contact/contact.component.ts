@@ -3,16 +3,13 @@ import { Component, OnInit } from '@angular/core';
 declare const ol: any;
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class FooterComponent implements OnInit {
-  constructor() {}
-  latitude: number = 52.2296756;
-  longitude: number = 21.0122287;
-
+export class ContactComponent implements OnInit {
   map: any;
+  constructor() {}
 
   ngOnInit() {
     this.map = new ol.Map({
@@ -23,7 +20,7 @@ export class FooterComponent implements OnInit {
         })
       ],
       view: new ol.View({
-        center: ol.proj.fromLonLat([this.longitude, this.latitude]),
+        center: ol.proj.fromLonLat([21.0122287, 52.229675]),
         zoom: 10
       })
     });
