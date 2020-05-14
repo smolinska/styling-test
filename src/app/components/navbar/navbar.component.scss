@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-button {
+    font-size: 14px;
+    line-height: 70px;
+    color: $white;
+    font-weight: bold;
+
+    &:hover {
+      color: $action2;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// DESKTOP
+@media (min-width: $md-min) {
+  .navbar {
+    height: 80px;
+    padding: 0 40px;
+
+    .logo {
+      padding: 24px 0 26px;
+    }
+
+    .toggle-navbar-button,
+    .navbar-collapse {
+      display: none;
+    }
+
+    .navbar-button {
+      margin-left: 47px;
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: $sm-max) {
+  .navbar {
+    height: 54px;
+    padding: 0 20px;
+
+    .logo {
+      padding: 10px 0 14px;
+    }
+
+    .toggle-navbar-button {
+      color: $action2;
+      font-size: 24px;
+    }
+
+    .navbar-button {
+      font-size: 16px;
+    }
+
+    .navbar-buttons-wrapper {
+      height: 100%;
+      margin-top: 54px;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      left: 100%;
+      transition: left 0.5s, right 0.5s;
+      background: $background;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.opened {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div class="navbar">
+  <div class="logo title-medium">company</div>
+  <div class="navbar-buttons-wrapper" [ngClass]="{'opened': isMenuOpened}">
+    <button class="navbar-button" (click)="isMenuOpened = false">Menu item1</button>
+    <button class="navbar-button" (click)="isMenuOpened = false">Menu item2</button>
+    <button class="navbar-button" (click)="isMenuOpened = false">Menu item3</button>
+    <button class="navbar-button" (click)="isMenuOpened = false">Menu item4</button>
+  </div>
+  <div class="toggle-navbar-button mdi mdi-menu" (click)="isMenuOpened = !isMenuOpened"></div>
+</div>
+
