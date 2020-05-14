@@ -1,11 +1,23 @@
 @import "variables";
 
+button {
+  font-family: 'Playfair Display', sans-serif;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 .button-default-large,
 .button-hollow-large {
   font-size: 24px;
   padding: 20px 53px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 22px;
     padding: 16px 55px;
   }
@@ -21,7 +33,7 @@
   font-size: 18px;
   padding: 15px 60px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     padding: 11px 55px;
   }
 
@@ -31,8 +43,20 @@
   }
 }
 
+.button-default-small,
+.button-hollow-small {
+  font-size: 16px;
+  padding: 9px 32px;
+
+  @media (max-width: $sm-max) {
+    font-size: 14px;
+    padding: 6px 32px;
+  }
+}
+
 .button-default-large,
-.button-default-medium {
+.button-default-medium,
+.button-default-small {
   color: $white;
   background: $primary;
   line-height: 24px;
@@ -47,7 +71,8 @@
 }
 
 .button-hollow-large,
-.button-hollow-medium {
+.button-hollow-medium,
+.button-hollow-small {
   color: $white;
   background: transparent;
   line-height: 24px;

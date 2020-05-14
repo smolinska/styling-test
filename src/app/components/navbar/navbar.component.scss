@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 .navbar {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,10 +19,6 @@
 
     &:hover {
       color: $primary;
-    }
-
-    &:focus {
-      outline: none;
     }
   }
 }

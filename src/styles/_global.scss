@@ -10,13 +10,6 @@ html {
   letter-spacing: 0;
 }
 
-button {
-  font-family: 'Playfair Display', sans-serif;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 // TITLES
 .title-xlarge,
 .title-large,
@@ -35,7 +28,7 @@ button {
   font-size: 54px;
   line-height: 70px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 44px;
     line-height: 54px;
   }
@@ -50,7 +43,7 @@ button {
   font-size: 44px;
   line-height: 54px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 32px;
     line-height: 42px;
   }
@@ -65,7 +58,7 @@ button {
   font-size: 32px;
   line-height: 42px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 22px;
     line-height: 32px;
   }
@@ -80,7 +73,7 @@ button {
   font-size: 22px;
   line-height: 32px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 18px;
     line-height: 28px;
   }
@@ -95,7 +88,7 @@ button {
   font-size: 18px;
   line-height: 28px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,7 +103,7 @@ button {
   font-size: 20px;
   line-height: 32px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 18px;
     line-height: 28px;
   }
@@ -125,7 +118,7 @@ button {
   font-size: 16px;
   line-height: 24px;
 
-  @media (max-width: $lg-max) {
+  @media (max-width: $md-max) {
     font-size: 16px;
     line-height: 24px;
   }

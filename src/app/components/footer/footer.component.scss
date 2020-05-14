@@ -5,6 +5,11 @@
   display: flex;
 }
 
+.footer-content-wrapper,
+.footer-map {
+  box-sizing: border-box;
+}
+
 .footer-content-wrapper {
   width: 50%;
   padding: 80px;
@@ -33,11 +38,15 @@
 
 .footer-map {
   width: 50%;
-  padding: 80px;
   background: $primary;
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-@media (max-width: $lg-max) {
+@media (max-width: $md-max) {
   .footer {
     flex-direction: column;
     justify-content: flex-start;
@@ -52,7 +61,6 @@
   .footer-map {
     width: auto;
     height: 40vh;
-    padding: 0;
   }
 }
 
