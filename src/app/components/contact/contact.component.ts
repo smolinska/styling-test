@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-declare const ol: any;
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MapService } from '../../services/map.service';
+import { Map } from 'ol';
 
 @Component({
   selector: 'app-contact',
@@ -8,21 +8,10 @@ declare const ol: any;
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  map: any;
-  constructor() {}
+  @ViewChild('map') map: Map;
+  constructor(private mapService: MapService) {}
 
   ngOnInit() {
-    this.map = new ol.Map({
-      target: 'map',
-      layers: [
-        new ol.layer.Tile({
-          source: new ol.source.OSM()
-        })
-      ],
-      view: new ol.View({
-        center: ol.proj.fromLonLat([21.0122287, 52.229675]),
-        zoom: 10
-      })
-    });
+    this.map = this.mapService.initializeMap('map', 21.0122287, 52.229675);
   }
 }

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MapService } from './services/map.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
